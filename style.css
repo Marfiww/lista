@@ -94,18 +94,38 @@ section {
 }
 
 #lista {
-    width: 600px;
-    height: 250px;
+    width: 37.5rem;
+    height: 15.625rem;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1px;
+    margin-bottom: 0.0625rem;
     margin-top: 1rem;
     color: orange;
     font-size: 1.5rem;
-    /* margin-right: 10rem; */
+    scrollbar-width: thin;
+    scrollbar-color: orange rgba(211, 211, 211, 0);
+
+
 }
+
+
+#lista::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+#lista::-webkit-scrollbar-track {
+    background: rgba(211, 211, 211, 0);
+}
+
+#lista::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 1.25rem;
+    border: 0.125rem solid lightgray;
+
+}
+
 
 input[type="checkbox"] {
     appearance: none;
