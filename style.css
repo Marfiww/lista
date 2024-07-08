@@ -84,6 +84,13 @@ section {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.85);
     border-radius: 1rem;
     background: transparent;
+    transition: background-color 0.7s ease;
+}
+
+.inputs-elements button:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
 }
 
 #lista {
